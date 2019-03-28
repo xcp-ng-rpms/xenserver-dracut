@@ -1,7 +1,7 @@
 Summary: dracut configuration files for XenServer
 Name: xenserver-dracut
 Version: 9
-Release: 1
+Release: 1%{dist}
 License: GPL
 Group: Xen
 URL: http://www.citrix.com
