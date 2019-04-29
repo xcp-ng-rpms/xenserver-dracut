@@ -5,7 +5,12 @@ Release: 1%{dist}
 License: GPL
 Group: Xen
 URL: http://www.citrix.com
-Source0: https://code.citrite.net/rest/archive/latest/projects/XS/repos/%{name}/archive?at=v%{version}&format=tar.gz&prefix=%{name}-%{version}#/%{name}-%{version}.tar.gz
+
+Source0: https://code.citrite.net/rest/archive/latest/projects/XS/repos/xenserver-dracut/archive?at=v9&format=tar.gz&prefix=xenserver-dracut-9#/xenserver-dracut-9.tar.gz
+
+
+Provides: gitsha(https://code.citrite.net/rest/archive/latest/projects/XS/repos/xenserver-dracut/archive?at=v9&format=tar.gz&prefix=xenserver-dracut-9#/xenserver-dracut-9.tar.gz) = eddd14c7589b1302c68129fc65c7fdc871ca003d
+
 BuildArch: noarch
 Requires: dracut
 
@@ -13,7 +18,7 @@ Requires: dracut
 dracut configuration files for XenServer.
 
 %prep
-%autosetup -p1 -n xenserver-dracut-9
+%autosetup -p1
 
 %build
 # Do nothing
